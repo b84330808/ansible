@@ -1,0 +1,2 @@
+bugfixes:
+  - "serial - a percentage batch size that works out to a whole number of hosts is no longer truncated to one host fewer by float rounding (for example, ``serial: 29%`` with 100 hosts now runs batches of 29 hosts, not 28)."

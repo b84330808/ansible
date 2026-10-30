@@ -28,7 +28,19 @@ pct_to_int_testdata = [
     ),
     pytest.param(
         "10%", 100, 1, 10, id="string_percentage_two_digit"
-    )
+    ),
+    pytest.param(
+        "29%", 100, 1, 29, id="string_percentage_exact_29_of_100"
+    ),
+    pytest.param(
+        "57%", 100, 1, 57, id="string_percentage_exact_57_of_100"
+    ),
+    pytest.param(
+        "58%", 50, 1, 29, id="string_percentage_exact_58_of_50"
+    ),
+    pytest.param(
+        "70%", 90, 1, 63, id="string_percentage_exact_70_of_90"
+    ),
 ]
 
 
